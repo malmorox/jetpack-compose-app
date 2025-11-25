@@ -24,9 +24,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            JetpackcomposeappTheme {
-                appTheme()
-            }
+            NavigationWrapper()
         }
     }
 }
@@ -71,7 +69,7 @@ fun appTheme() {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun MyPreview() {
     JetpackcomposeappTheme {
         appTheme()
     }
